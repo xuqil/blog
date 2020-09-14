@@ -1,6 +1,16 @@
 module.exports = {
+    head: [
+        ['link', { rel: 'icon', href: '/assets/img/logo.png' }]
+      ],
     themeConfig: {
         logo: '/assets/img/logo.png',
+        sidebar: {
+            '/python/': [
+              '',     /* /foo/ */
+              'one',  /* /foo/one.html */
+              'two'   /* /foo/two.html */
+            ],
+        },
         nav: [
             { text: '主页', link: '/' },
             { text: 'Linux', link: '/linux/' },

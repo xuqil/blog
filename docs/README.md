@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: assets/img/logo.png
+heroImage: assets/img/logo/logo.png
 heroText: Code Live
 tagline: 程序员 Live
 actionText: 开始 →

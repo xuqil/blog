@@ -17,7 +17,7 @@ else
     fi
     git clone https://github.com/xuqil/blog.xuqilong.top.git ${GIT_BACK}
     if [ $? = 0 ]; then
-      /bin/cp -r ${GIT_BACK}   ${BLOG_NAME}
+       rm -rf ${BLOG_NAME} && mv ${GIT_BACK} ${BLOG_NAME}
     fi
   fi
 fi

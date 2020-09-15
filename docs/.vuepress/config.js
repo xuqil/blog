@@ -1,3 +1,8 @@
+const path = require("path")
+const rootpath = path.dirname(__dirname) //执行一次dirname将目录定位到docs目录
+const utils = require('./utils/index.js');
+const filehelper = require('./utils/initPage.js');
+
 module.exports = {
     head: [
         ['link', { rel: 'icon', href: '/assets/img/logo/logo.png' }]
@@ -5,16 +10,9 @@ module.exports = {
     themeConfig: {
         logo: '/assets/img/logo/logo.png',
         sidebar: {
-            '/python/advance/': [
-                '',
-                'one',
-                'two'
-            ],
-            '/python/standard/': [
-                '',
-                'tt',
-                'mm'
-            ],
+            '/python/advance/': utils.genSidebar('高阶用法', filehelper.getFileName(rootpath+"/python/advance/"), false),
+            '/python/standard/': utils.genSidebar('标准库', filehelper.getFileName(rootpath+"/python/standard/"), false),
+
         },
         nav: [
             { text: '主页', link: '/' },

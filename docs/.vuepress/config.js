@@ -20,7 +20,7 @@ module.exports = {
             { text: '主页', link: '/' },
             {
                 text: 'Python',
-                 items: [
+                items: [
                     { text: '进阶', link: '/python/advance/' },
                     { text: '标准库', link: '/python/standard/' },
                     { text: '各种工具', link: '/python/utils/' },

@@ -4,6 +4,7 @@ const utils = require('./utils/index.js');
 const filehelper = require('./utils/initPage.js');
 
 module.exports = {
+    title: "FeelingLive",
     head: [
         ['link', { rel: 'icon', href: '/assets/img/logo/logo.png' }]
     ],
@@ -53,13 +54,6 @@ module.exports = {
             },
             { text: "Git Hub", link: 'https://github.com/xuqil' },
         ]
-    },
-    configureWebpack: {
-        resolve: {
-            alias: {
-                '@img': 'assets\img'
-            }
-        }
     },
     plugins: {
         '@vuepress/active-header-links': {

@@ -16,6 +16,7 @@ module.exports = {
             '/python/utils/': utils.genSidebar('配置相关', filehelper.getFileName(rootpath + "/python/utils/"), false),
             '/python/restFramework/': utils.genSidebar('RESTFramework', filehelper.getFileName(rootpath + "/python/restFramework/"), false),
             '/java/basis/': utils.genSidebar('Java基础知识', filehelper.getFileName(rootpath + "/java/basis/"), false),
+            '/middle/f5/': utils.genSidebar('F5相关知识', filehelper.getFileName(rootpath + "/middle/f5/"), false),
         },
         nav: [
             { text: '主页', link: '/' },
@@ -43,6 +44,7 @@ module.exports = {
                     { text: 'Elasticsearch', link: '/middle/elasticsearch/' },
                     { text: 'Nginx', link: '/middle/nginx/' },
                     { text: 'Kafka', link: '/middle/kafka/' },
+                    { text: 'F5', link: '/middle/f5/' },
                 ]
             },
             {

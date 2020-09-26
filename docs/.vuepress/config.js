@@ -6,7 +6,21 @@ const filehelper = require('./utils/initPage.js');
 module.exports = {
     title: "FeelingLive",
     head: [
-        ['link', { rel: 'icon', href: '/assets/img/logo/logo.png' }]
+        ['link', { rel: 'icon', href: '/assets/img/logo/logo.png' }],
+        // 添加百度统计
+        [
+            "script",
+            {},
+            `
+            var _hmt = _hmt || [];
+            (function() {
+              var hm = document.createElement("script");
+              hm.src = "https://hm.baidu.com/hm.js?966c32065299cfcd0ae5ae2eae1aa280";
+              var s = document.getElementsByTagName("script")[0]; 
+              s.parentNode.insertBefore(hm, s);
+            })();            
+          `
+        ]
     ],
     themeConfig: {
         logo: '/assets/img/logo/logo.png',
@@ -69,6 +83,9 @@ module.exports = {
                 moment.locale(lang)
                 return moment(timestamp).fromNow()
             }
+        },
+        '@vuepress/google-analytics': {
+            'ga': 'UA-179094677-1'
         }
     }
 }

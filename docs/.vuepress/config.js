@@ -25,6 +25,7 @@ module.exports = {
     themeConfig: {
         logo: '/assets/img/logo/logo.png',
         sidebar: {
+            '/python/coroutine/': utils.genSidebar('协程', filehelper.getFileName(rootpath + "/python/coroutine/"), false),
             '/python/advance/': utils.genSidebar('高阶用法', filehelper.getFileName(rootpath + "/python/advance/"), false),
             '/python/standard/': utils.genSidebar('标准库', filehelper.getFileName(rootpath + "/python/standard/"), false),
             '/python/utils/': utils.genSidebar('配置相关', filehelper.getFileName(rootpath + "/python/utils/"), false),
@@ -38,6 +39,7 @@ module.exports = {
                 text: 'Python',
                 items:
                     [
+                        { text: '协程', link: '/python/coroutine/' },
                         { text: '进阶', link: '/python/advance/' },
                         { text: '标准库', link: '/python/standard/' },
                         { text: 'REST Framework', link: '/python/restFramework/' },

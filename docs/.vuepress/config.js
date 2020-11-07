@@ -30,6 +30,7 @@ module.exports = {
             '/python/standard/': utils.genSidebar('标准库', filehelper.getFileName(rootpath + "/python/standard/"), false),
             '/python/utils/': utils.genSidebar('配置相关', filehelper.getFileName(rootpath + "/python/utils/"), false),
             '/python/restFramework/': utils.genSidebar('RESTFramework', filehelper.getFileName(rootpath + "/python/restFramework/"), false),
+            '/python/skill/': utils.genSidebar('使用技巧和例子', filehelper.getFileName(rootpath + "/python/skill/"), false),
             '/java/basis/': utils.genSidebar('Java基础知识', filehelper.getFileName(rootpath + "/java/basis/"), false),
             '/middle/f5/': utils.genSidebar('F5相关知识', filehelper.getFileName(rootpath + "/middle/f5/"), false),
         },
@@ -44,6 +45,7 @@ module.exports = {
                         { text: '标准库', link: '/python/standard/' },
                         { text: 'REST Framework', link: '/python/restFramework/' },
                         { text: '各种工具', link: '/python/utils/' },
+                        { text: '使用技巧和例子', link: '/python/skill/' },
                     ]
             },
             {

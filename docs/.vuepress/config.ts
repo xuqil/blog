@@ -174,7 +174,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         content: '个人技术博客,后端,后端开发,操作系统,算法,MySQL,go,golang,python,python,css3,html5,Node,git,github,markdown',
       },
     ],
-    ['meta', { name: 'baidu-site-verification', content: 'code-ZaU5xuh72v' }], // 百度统计的站长验证
+    // ['meta', { name: 'baidu-site-verification', content: 'code-ZaU5xuh72v' }], // 百度统计的站长验证www.xuqilong.top
+    ['meta', { name: 'baidu-site-verification', content: 'code-yFfTOjuOC1' }], // 百度统计的站长验证xuqilong.top
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     [  // 添加百度统计
       "script",

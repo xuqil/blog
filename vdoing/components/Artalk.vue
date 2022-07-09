@@ -29,7 +29,7 @@ export default {
           el: "#Comments",
           pageKey: "", // 页面链接
           pageTitle: "", // 页面标题
-          server: "http://localhost:23366", // 后端地址
+          server: "https://talk.xuqilong.top", // 后端地址
           site: "程序员 Life",
         });
       });
